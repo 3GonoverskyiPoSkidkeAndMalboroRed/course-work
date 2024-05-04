@@ -36,3 +36,9 @@
     transform: rotate(360deg);
   }
 }
+
+.ShopItemStyle{
+  height: 30%;
+  width: 30%;
+  align: center;
+}

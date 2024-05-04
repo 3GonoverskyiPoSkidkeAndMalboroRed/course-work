@@ -1,0 +1,53 @@
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+/* параметры шапки */
+    width: 100%;
+    height: 100px;
+
+/* параметры текста */
+    background-color: black;
+    color: rgb(195, 0, 0);
+
+}
+.nav{
+    flex: 1;
+    display: flex;
+}
+
+.nav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav li{
+    margin: 0, 10px;
+}
+
+.nav a{
+    text-decoration: none;
+    color: rgb(195, 0, 0);
+    font-size: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.header img{
+    width: 9%;
+    height: auto;
+    margin-left: 30px;
+    padding: auto;
+}
+
+а {
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    text-decoration: underline;
+}

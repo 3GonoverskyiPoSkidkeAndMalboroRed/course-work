@@ -1,0 +1,20 @@
+button {
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px ;
+    cursor: pointer;
+    transition: all 0.5s;
+    font-weight: bold;
+    margin-right: 12px;
+
+}
+
+.button:hover {
+    opacity: O.5;
+}
+
+.button:active {
+    background: blue;
+    color: azure;
+    
+}
