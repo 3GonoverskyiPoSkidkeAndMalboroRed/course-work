@@ -18,6 +18,7 @@ import { pics } from './img_item.js';
 //     render() {
     export default () => {
         return ( 
+            <div><h2>SHOP THIS ITEM</h2>
             <Carousel>
                 {/* {pics.map((pic, index) => <Block {...pic} key={index} />)} */}
                 <div >
@@ -32,7 +33,9 @@ import { pics } from './img_item.js';
                     <img src={img3}  />
                     <p className="legend">Legend 3</p>
            </div>
+    
             </Carousel>
+            </div>
         );
     }
 // };

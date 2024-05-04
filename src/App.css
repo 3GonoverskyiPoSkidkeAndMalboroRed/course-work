@@ -40,5 +40,9 @@
 .ShopItemStyle{
   height: 30%;
   width: 30%;
-  align: center;
+  margin: auto;
+}
+
+.BackgroundColor{
+  background-color: black;
 }
