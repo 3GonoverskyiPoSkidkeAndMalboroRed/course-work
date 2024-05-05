@@ -41,8 +41,14 @@
   height: 30%;
   width: 30%;
   margin: auto;
+  padding-bottom:12%;
 }
 
-.BackgroundColor{
+.HomePageStyles{
   background-color: black;
+  color: white;
+  text-align: center;
+  padding: auto;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: lighter;
 }

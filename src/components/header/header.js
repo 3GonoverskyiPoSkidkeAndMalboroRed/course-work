@@ -1,3 +1,4 @@
+import Store from '../../pages/Store.js'
 import './header-styles.css'
 import logo from './logoshmodelmodel.png';
 export default () => {
@@ -7,7 +8,7 @@ export default () => {
 
         <nav class="nav">
           <ul>
-            <li><a href="../Store.js">STORE</a></li>
+            <li><a href="/src/pages/Store.js">STORE</a></li>
             <li><a href="#">DESIGN</a></li>
             </ul>
         </nav>
@@ -18,6 +19,12 @@ export default () => {
             <li><a href="#">MUSIC</a></li>
             </ul>
             </nav>
+            
       </header>
+     
     );
 };
+
+
+
+

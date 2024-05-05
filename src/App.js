@@ -8,11 +8,13 @@ import AbsorbThisItem from './components/abscontent/abscontent.js'
 
 function App() {
   return (
-    <div class='BackgroundColor'>
+    
+    <div class='HomePageStyles'>
   
       <Header />
       <div class='ShopItemStyle'><ShopItems /></div>
        <AbsorbThisItem/>
+      
     </div>
   );
 }

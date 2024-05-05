@@ -23,15 +23,15 @@ import { pics } from './img_item.js';
                 {/* {pics.map((pic, index) => <Block {...pic} key={index} />)} */}
                 <div >
                     <img src={img1} />
-                    <p className="legend">Legend 2</p>
+                    
                 </div>
                 <div>
                     <img src={img2}  />
-                    <p className="legend">Legend 3</p>
+                   
                 </div>
                 <div>
                     <img src={img3}  />
-                    <p className="legend">Legend 3</p>
+                   
            </div>
     
             </Carousel>
