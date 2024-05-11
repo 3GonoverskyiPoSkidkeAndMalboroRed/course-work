@@ -3,16 +3,12 @@ import Header from '../../../components/header/header';
 import img1 from '../../../assets/rickowensleatherpilotjacket.png';
 function Store() {
   return (
-    <div className='StorePagestyles'>
-      <div><Header /></div>
+    <div><Header />
+      <div className='StorePagestyles'>
+    
       <div className='store-container'>
         <div className='filters'>
-          <h2>Filters</h2>
-          <ul>
-            <li>Filter 1</li>
-            <li>Filter 2</li>
-            <li>Filter 3</li>
-          </ul>
+       
         </div>
         <div className='products'>
           <div className='product-item'>
@@ -47,6 +43,7 @@ function Store() {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 }

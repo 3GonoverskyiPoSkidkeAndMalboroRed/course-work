@@ -41,7 +41,7 @@
   height: 30%;
   width: 30%;
   margin: auto;
-  padding-bottom:12%;
+  padding-bottom:7%;
 }
 
 .HomePageStyles{
@@ -53,6 +53,7 @@
   font-weight: lighter;
 }
 
-.ColorSchemesExample{
-  justify-content: space-between;
+.AbsContent{
+  padding-bottom: 3%;
+
 }

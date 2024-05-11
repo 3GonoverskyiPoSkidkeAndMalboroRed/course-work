@@ -1,4 +1,8 @@
-import 'Home.css'
+import './Home.css'
+// import './App.css';
+import Header from '../../header/header'
+import ShopItems from '../../shopthsitems/shopthsitems'
+import AbsorbThisItem from '../../abscontent/abscontent'
 function Home() {
   return (
     

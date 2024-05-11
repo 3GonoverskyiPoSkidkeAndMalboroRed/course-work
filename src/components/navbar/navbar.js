@@ -10,7 +10,7 @@ function ColorSchemesExample() {
       <Container>
         
         <Nav className="me-auto ">
-          <Nav.Link href="#home">STORE</Nav.Link>
+          <Nav.Link href="../pages/Store/Store.js">STORE</Nav.Link>
           <Nav.Link href="#features">DESIGN</Nav.Link>
           {/* <Navbar.Brand href="#home"> <img src={logo} alt="Logo" width="50" height="50" /></Navbar.Brand> */}
           <Nav.Link href="#pricing">NEWS</Nav.Link>
