@@ -1,0 +1,85 @@
+/* Nav */
+body{
+	background-color: black;
+}
+
+.nav {
+	padding: 20px 0;
+	background-color: black;
+	border-bottom: 1px solid var(--nav-border);
+	color: var(--nav-text);
+	letter-spacing: normal;
+}
+
+.nav-row {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	column-gap: 30px;
+	row-gap: 20px;
+	flex-wrap: wrap;
+}
+
+.logo {
+	margin-right: auto;
+	color: var(--nav-text);
+	font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	align-items: end;
+	height: auto;
+	width: 14%;
+}
+
+.logo strong {
+	font-weight: 700;
+}
+
+.nav-list {
+	display: flex;
+	flex-wrap: wrap;
+	row-gap: 10px;
+	align-items: center;
+	column-gap: 40px;
+	font-size: 16px;
+	font-weight: 500;
+	font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.nav-list__link {
+	color: red;
+	transition: opacity 0.2s ease-in;
+	font-size: 50px;
+}
+
+.nav-list__link:hover {
+	opacity: 0.8;
+}
+
+.nav-list__link--active {
+	position: relative;
+}
+
+.nav-list__link--active::before {
+	content: '';
+
+	position: absolute;
+	left: 0;
+	top: 100%;
+
+	display: block;
+	height: 2px;
+	width: 100%;
+	background-color: red;
+}
+
+.TitleOfCarousel{
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	color: white;
+	text-align: center;
+	font-size: xx-large;
+}
+
+.Carousel {
+
+	height: auto; 
+	width: 50%;
+}

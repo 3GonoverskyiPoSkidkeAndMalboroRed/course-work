@@ -1,32 +1,31 @@
+import "./styles/main.css";
 
-import './App.css';
-// import Header from './components/header/header.js';
-// import ListItem from './components/main_page_info.js';
-// import {mainPageInfo} from './content/data_list.js';
-// import ColorSchemesExample from '../src/components/navbar/navbar.js';
-// import ShopItems from './components/shopthsitems/shopthsitems.js'
-// import AbsorbThisItem from './components/abscontent/abscontent.js'
-// import Store from '../src/components/pages/Store/Store.js'
-// import Home from './components/pages/Home/Home.js';
-import Music from '../src/components/pages/Music/Music.js'
+import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
+
+import Navbar from "./components/navbar/Navbar"
+import Footer from "./components/footer/Footer";
+import Home from "./pages/Home";
+import Projects from "./pages/Projects";
+import Project from "./pages/Project";
+import Contacts from "./pages/Contacts";
+
+import ScrollToTop from "./utils/scrollToTop"
+
 function App() {
   return (
-    // <div class='HomePageStyles'>
-  
-    //   <Header />
-    //   <div class='ShopItemStyle'><ShopItems />
-    //   </div>
-    //   <div className='AbsContent'>
-    //    <AbsorbThisItem/>
-    //    </div>
-    //   </div>
-
-
-
-    // <Home />
-
-
-    <Music />
+		<div className="App">
+			<Router>
+				<ScrollToTop />
+				<Navbar />
+				<Routes>
+					<Route path="/" element={<Home />} />
+					<Route path="/projects" element={<Projects />} />
+					<Route path="/project/:id" element={<Project />} />
+					<Route path="/contacts" element={<Contacts />} />
+				</Routes>
+				<Footer />
+			</Router>
+		</div>
   );
 }
 
