@@ -16,7 +16,7 @@ const Navbar = () => {
 					<ul className="nav-list">
 						<li className="nav-list__item">
 							<NavLink
-								to="/"
+								to="/store"
 								className={({ isActive }) =>
 									isActive ? activeLink : normalLink
 								}
