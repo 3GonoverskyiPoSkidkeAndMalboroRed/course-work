@@ -8,7 +8,9 @@ import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import Project from "./pages/Project";
 import Contacts from "./pages/Contacts";
-import Store from "./pages/Store";
+// import Store from "./pages/Store";
+import Store from './components/market/shop.js';
+
 
 import ScrollToTop from "./utils/scrollToTop"
 
