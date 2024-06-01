@@ -1,6 +1,5 @@
 import {useParams} from "react-router-dom";
-import BtnGitHub from "../components/btnGitHub/BtnGitHub";
-import {projects} from "./../helpers/projectsList"
+import {projects} from "../../helpers/projectsList"
 
 const Project = () => {
 	const {id} = useParams();
@@ -10,21 +9,18 @@ const Project = () => {
 		<main className="section">
 			<div className="container">
 				<div className="project-details">
-					<h1 className="title-1">{project.title}</h1>
+					<h1 className="title-2">{project.Disigner}</h1>
+					<h3 className="title-3">{project.ItemName}</h3>
 
 					<img
 						src={project.imgBig}
-						alt={project.title}
+						alt={project.ItemName}
 						className="project-details__cover"
 					/>
 
 					<div className="project-details__desc">
-						<p>Skills: {project.skills}</p>
+						<p>Price: {project.price}</p>
 					</div>
-
-					{project.gitHubLink && (
-						<BtnGitHub link="https://github.com" />
-					)}
 				</div>
 			</div>
 		</main>

@@ -3,12 +3,13 @@ import "./styles/main.css";
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 
 import Navbar from "./components/navbar/Navbar"
-import Footer from "./components/footer/Footer";
+
 import Home from "./pages/Home";
-import Projects from "./pages/Projects";
-import Project from "./pages/Project";
-import Contacts from "./pages/Contacts";
-import Store from "./pages/Store";
+import Projects from "./pages/Design/Projects";
+import Project from "./pages/Design/Project";
+import Music from "./pages/Music/Music";
+import Stors from "./pages/Store/Stors";
+import Store from './pages/Store/Store'
 
 import ScrollToTop from "./utils/scrollToTop"
 
@@ -20,12 +21,13 @@ function App() {
 				<Navbar />
 				<Routes>
 					<Route path="/" element={<Home />} />
-					<Route path="/store" element={<Store />} />
+					<Route path="/stors" element={<Stors />} />
+					<Route path="/store/:id" element={<Store />} />
 					<Route path="/projects" element={<Projects />} />
 					<Route path="/project/:id" element={<Project />} />
-					<Route path="/contacts" element={<Contacts />} />
+					<Route path="/music" element={<Music />} />
 				</Routes>
-				<Footer />
+				
 			</Router>
 		</div>
   );

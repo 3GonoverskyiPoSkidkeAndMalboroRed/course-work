@@ -45,7 +45,7 @@
 
 import React from 'react';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import { Carousel } from 'react-responsive-carousel';
+import Slider from './Slider';
 import photo1 from '../../img/jpgcyberskullmeshtop.png'
 import photo2 from '../../img/reckowensmineralpearlbolanbootcutpants.png'
 import photo3 from '../../img/rickowensleatherpilotjacket.png'
@@ -57,22 +57,7 @@ function Header() {
 				<div className='TitleOfCarousel'>
 				<h2>SHOP THIS ITEM</h2>
 				</div>
-            <Carousel className='Carousel'>
-                {/* {pics.map((pic, index) => <Block {...pic} key={index} />)} */}
-                <div >
-                    <img src={photo1} />
-                    
-                </div>
-                <div>
-                    <img src={photo2}  />
-                   
-                </div>
-                <div>
-                    <img src={photo3}  />
-                   
-           </div>
-    
-            </Carousel>
+                <Slider />
             </div>
         );
     }
