@@ -1,19 +1,19 @@
-import Library from '../../components/library/Library';
-import {librarys} from "../../helpers/librarysList"
+import Library from '../../components/library/Library.js';
+import {librarys} from "../../helpers/LibraryList.js"
 
 const Librarys = () => {
 	return (
 		<main className="section">
   <div className="container">
     {/* <h2 className="title-1"></h2> */}
-    <div className="librarys-grid">
-      <ul className="librarys">
-        {librarys.map((librarys, index) => {
+    <div className="projects-grid">
+      <ul className="projects">
+        {librarys.map((library, index) => {
           return (
             <Library
               key={index}
-              title={librarys.Disigner}
-              img={librarys.img}
+              title={library.Disigner}
+              img={library.img}
               index={index}
             />
           );

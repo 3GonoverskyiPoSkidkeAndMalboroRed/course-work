@@ -5,9 +5,8 @@ import Home from "./pages/Home";
 import Projects from "./pages/Design/Projects";
 import Project from "./pages/Design/Project";
 import Music from "./pages/Music/Music";
-import Librarys from "./pages/Library/Librarys"
-import Library from "./pages/Library/Library"
-
+import LibraryS from "./pages/Library/Librarys"
+import Library from "./pages/Library/Library";
 
 function App() {
   return (
@@ -17,10 +16,14 @@ function App() {
 				<Navbar />
 				<Routes>
 					<Route path="/" element={<Home />} />
-					<Route path="/librarys" element={<Librarys />} />
-					<Route path="/library/:id" element={<Library />} />
+
 					<Route path="/projects" element={<Projects />} />
 					<Route path="/project/:id" element={<Project />} />
+
+					<Route path="/librarys" element={<LibraryS />} />
+					<Route path="/library/:id" element={<Library />} />
+
+					
 					<Route path="/music" element={<Music />} />
 				</Routes>
 				
