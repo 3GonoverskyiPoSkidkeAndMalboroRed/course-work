@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom';
-import './style.css';
+import '../library/style.css';
 
 const Library = ({ title, img, index }) => {
 	return (

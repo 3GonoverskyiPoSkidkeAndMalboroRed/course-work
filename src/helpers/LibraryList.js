@@ -8,9 +8,9 @@ const librarys = [
 		MagazineName: 'Mineral pearl cut pants',
 		img: library01,
 		imgs: [
-			library01Big,
 			Library02Big,
-			library01Big,
+			Library02Big,
+			Library02Big,
 			Library02Big
 		]
 	},

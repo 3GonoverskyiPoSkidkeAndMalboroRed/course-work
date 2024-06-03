@@ -9,18 +9,19 @@ const Library = () => {
     return (
 		<main className="section">
 			<div className="container">
-				<div className="project-details">
+				<div className="library-details">
 					<h1 className="title-2">{library.Tiile}</h1>
 					<h3 className="title-3">{library.MagazineName}</h3>
+					<div class="library-grid">
 
-					<img
-						src={library.imgs}
-						alt={library.ItemName}
-						className="project-details__cover"
-					/>
-
-					<div className="project-details__desc">
-					
+					{library.imgs.map((img, index) => (
+						<img
+							key={index}
+							src={img}
+							alt={library.ItemName}
+							className="library-grid__item"
+						/>
+					))}
 					</div>
 				</div>
 			</div>
