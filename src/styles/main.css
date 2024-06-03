@@ -206,20 +206,26 @@ body {
 	border-radius: 0px;
 }
 
-/* Librarys */
+/* LibraryS */
 
+
+/* НЕ ТРОГАТЬ ЛОМАЕТ ИНАЧЕ СТРАНИЦУ LIBRARY */
 .librarys{
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
-
 	grid-gap: 20px;
-	border-radius: 0px;
+
+
+
 }
 
 
-/* Lybrary detals */
+/* Library detals */
+.zoom {
+	transform: scale(1.5);
+  }
 
-.lybrary-details {
+.library-details {
 	margin: 0 auto;
 	max-width: 865px;
 	display: flex;
@@ -229,20 +235,21 @@ body {
 }
 
 
-.lybrary-grid {
+.library-grid {
 	display: grid;
-	grid-template-columns: repeat(4, 1fr);
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 10px;
 
-	grid-gap: 20px;
-	border-radius: 0px;
+
 
 
   }
   
-  .lybrary-grid__item {
-	width: 30%;
-	height: 100%;
-	object-fit: cover;
+  .library-grid__item {
+	width: 100%;
+	height: auto;
+	transition: transform.5s ease;
+
   }
 
 

@@ -1,10 +1,13 @@
 import {useParams} from "react-router-dom";
 import {librarys} from "../../helpers/LibraryList.js"
 
-
 const Library = () => {
 	const {id} = useParams();
 	const library = librarys[id];
+
+	const handleImageClick = (event) => {
+		event.target.classList.toggle('zoom');
+	};
 
     return (
 		<main className="section">
@@ -20,6 +23,7 @@ const Library = () => {
 							src={img}
 							alt={library.ItemName}
 							className="library-grid__item"
+							onClick={handleImageClick}
 						/>
 					))}
 					</div>
