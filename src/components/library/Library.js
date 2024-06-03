@@ -6,7 +6,7 @@ const Library = ({ title, img, index }) => {
 		<NavLink to={`/library/${index}`}>
 			<li className="project">
 				<img src={img} alt={title} className="project__img" />
-				<h3 className="project__title">{title}</h3>
+
 			</li>
 		</NavLink>
 	);

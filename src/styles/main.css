@@ -206,6 +206,46 @@ body {
 	border-radius: 0px;
 }
 
+/* Librarys */
+
+.librarys{
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 20px;
+	border-radius: 0px;
+}
+
+
+
+/* Lybrary detals */
+.lybrary-details {
+	margin: 0 auto;
+	max-width: 865px;
+
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+}
+
+.lybrary-details__cover {
+	max-width: 45%;
+	margin-bottom: 40px;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+
+}
+
+.lybrary-details__desc {
+	margin-bottom: 30px;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 1.3;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+}
+
+
+
+
 /* Project details */
 
 .project-details {
@@ -378,74 +418,4 @@ body {
 
 
 
-  /*Store*/
   
-  .StorePagestyles {
-    display: grid;
-    /* grid-template-columns: 200px 1fr; */
-    grid-template-rows: auto 1fr;
-    grid-template-areas:
-      'header header'
-      'filters products';
-    height: 100vh;
-    background-color: black;
-  }
-  
-  .store-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
-    padding: 20px;
-    background-color: black;
-  }
-  
-  .filters {
-    grid-area: filters;
-    background-color:black;
-    padding: 20px;
-  }
-  
-  .products {
-    grid-area: products;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
-    background-color: black;
-  }
-  
-  .product-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 20px;
-    border: 1px solid #222222;
-    border-radius: 0px;
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  .product-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .product-item img {
-    width: 100%;
-    height: auto;
-    /* border-radius: 5px;
-    margin-bottom: 10px; */
-  }
-  
-  .product-item h3 {
-    margin: 0;
-    margin-bottom: 5px;
-  }
-  
-  .product-item p {
-    margin: 0;
-    font-weight: bold;
-    color: #f00;
-  }
-  h3{
-    color: white;
-  }

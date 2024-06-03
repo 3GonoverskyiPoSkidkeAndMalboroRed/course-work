@@ -10,17 +10,17 @@ const Library = () => {
 		<main className="section">
 			<div className="container">
 				<div className="project-details">
-					<h1 className="title-2">{library.Disigner}</h1>
-					<h3 className="title-3">{library.ItemName}</h3>
+					<h1 className="title-2">{library.Tiile}</h1>
+					<h3 className="title-3">{library.MagazineName}</h3>
 
 					<img
-						src={library.imgBig}
+						src={library.imgs}
 						alt={library.ItemName}
 						className="project-details__cover"
 					/>
 
 					<div className="project-details__desc">
-						<p>Price: {library.price}</p>
+					
 					</div>
 				</div>
 			</div>

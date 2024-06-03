@@ -7,7 +7,7 @@ const Librarys = () => {
   <div className="container">
     {/* <h2 className="title-1"></h2> */}
     <div className="projects-grid">
-      <ul className="projects">
+      <ul className="librarys">
         {librarys.map((library, index) => {
           return (
             <Library
