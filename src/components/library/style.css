@@ -1,4 +1,4 @@
-.project {
+.library {
 	max-width: 370px;
 	background-color: black;
 	box-shadow: var(--box-shadow);
@@ -6,11 +6,11 @@
 	border: 3px solid whitesmoke
 }
 
-.project__img {
+.library__img {
 	border-radius: 0px;
 }
 
-.project__title {
+.library__title {
 	padding: 15px 20px 15px;
 	font-weight: 1000;
 	font-size: 27px;
@@ -21,6 +21,6 @@
 	
 }
 
-.project__title:hover {
+.library__title:hover {
 	color: #7c0000; /* Change the color to a darker shade */
   }

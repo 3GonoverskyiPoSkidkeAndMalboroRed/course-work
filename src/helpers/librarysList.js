@@ -16,7 +16,7 @@ import project05Big from "./../img/projects/05-big.jpg";
 import project06 from "./../img/reckowensmineralpearlbolanbootcutpants (1).png";
 import project06Big from "./../img/projects/06-big.jpg";
 
-const projects = [
+const librarys = [
 	{
 		Disigner: 'Rick Owens',
 		ItemName: 'Mineral pearl cut pants',
@@ -67,4 +67,4 @@ const projects = [
 	},
 ];
 
-export {projects}
+export {librarys}

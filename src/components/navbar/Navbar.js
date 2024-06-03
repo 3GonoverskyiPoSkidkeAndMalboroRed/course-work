@@ -39,18 +39,7 @@ const Navbar = () => {
 						<NavLink to="/" className="logo">
 					<img src={logo} alt="Logo" />
 					</NavLink>
-
-						<li className="nav-list__item">
-							<NavLink
-								to="/news"
-								className={({ isActive }) =>
-									isActive ? activeLink : normalLink
-								}
-							>
-								NEWS
-							</NavLink>
-						</li>
-						<li className="nav-list__item">
+					<li className="nav-list__item">
 							<NavLink
 								to="/music"
 								className={({ isActive }) =>
@@ -60,6 +49,18 @@ const Navbar = () => {
 								MUSIC
 							</NavLink>
 						</li>
+
+						<li className="nav-list__item">
+							<NavLink
+								to="/librarys"
+								className={({ isActive }) =>
+									isActive ? activeLink : normalLink
+								}
+							>
+								LIBRARY
+							</NavLink>
+						</li>
+
 					</ul>
 				</div>
 			</div>

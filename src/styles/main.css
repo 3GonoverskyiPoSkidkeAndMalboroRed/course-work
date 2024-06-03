@@ -194,11 +194,17 @@ body {
 
 .projects {
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: repeat(5, 1fr);
 	grid-gap: 20px;
+	border-radius: 0px;
 }
 
-
+.news {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 20px;
+	border-radius: 0px;
+}
 
 /* Project details */
 
@@ -217,8 +223,7 @@ body {
 	max-width: 45%;
 	margin-bottom: 40px;
 
-	box-shadow: var(--box-shadow);
-	/* border-radius: 10px; */
+
 }
 
 .project-details__desc {
@@ -427,8 +432,8 @@ body {
   .product-item img {
     width: 100%;
     height: auto;
-    border-radius: 5px;
-    margin-bottom: 10px;
+    /* border-radius: 5px;
+    margin-bottom: 10px; */
   }
   
   .product-item h3 {
