@@ -46,9 +46,7 @@
 import React from 'react';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import Slider from './Slider';
-import photo1 from '../../img/jpgcyberskullmeshtop.png'
-import photo2 from '../../img/reckowensmineralpearlbolanbootcutpants.png'
-import photo3 from '../../img/rickowensleatherpilotjacket.png'
+
 
 
 function Header() {

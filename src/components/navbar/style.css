@@ -4,9 +4,9 @@ body{
 }
 
 .nav {
-	padding: 20px 0;
+	padding: 15px 0;
 	background-color: black;
-	border-bottom: 1px solid var(--nav-border);
+
 	color: var(--nav-text);
 	letter-spacing: normal;
 }
@@ -40,7 +40,7 @@ body{
 	row-gap: 10px;
 	align-items: center;
 	column-gap: 40px;
-	font-size: 16px;
+	font-size: 10px;
 	font-weight: 500;
 	font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }

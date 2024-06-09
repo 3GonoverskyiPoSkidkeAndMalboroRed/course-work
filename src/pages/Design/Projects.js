@@ -1,4 +1,5 @@
 import Project from '../../components/project/Project';
+
 import {projects} from "../../helpers/projectsList"
 
 const Projects = () => {
@@ -26,3 +27,6 @@ const Projects = () => {
 };
 
 export default Projects;
+
+
+

@@ -1,4 +1,4 @@
-import ReactPlayer from "react-player";
+import ReactPlayer from "react-player/youtube";
 
 const youtubeLinks = [
 	{url: 'https://www.youtube.com/watch?v=jckDw7_JbfU', description: 'Description 1\nSecond line of description'},

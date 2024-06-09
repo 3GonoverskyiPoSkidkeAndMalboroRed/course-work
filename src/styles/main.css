@@ -221,8 +221,16 @@ body {
 
 
 /* Library detals */
+
+
 .zoom {
-	transform: scale(1.5);
+	position: fixed; /* Take the image out of the document flow */
+	top: 50%; /* Move the image to the vertical center */
+	left: 50%; /* Move the image to the horizontal center */
+	transform: translate(-50%, -50%) scale(0.33); /* Scale the image and move it to the center */
+	z-index: 1; /* Bring the image to the front */
+	border-radius: 10px; /* Add a border radius to give a nice effect */
+	box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.5); /* Add a box shadow to give a nice effect */
   }
 
 .library-details {
@@ -248,7 +256,8 @@ body {
   .library-grid__item {
 	width: 100%;
 	height: auto;
-	transition: transform.5s ease;
+	transition: transform 0.5s ease;
+	cursor: zoom-in;
 
   }
 
@@ -270,15 +279,15 @@ body {
 }
 
 .project-details__cover {
-	max-width: 45%;
-	margin-bottom: 40px;
-
-
+	width: 100%;
+	height: auto;
+	transition: transform 0.5s ease;
+	cursor: zoom-in;
 }
 
 .project-details__desc {
 	margin-bottom: 30px;
-	font-weight: 700;
+
 	font-size: 24px;
 	line-height: 1.3;
 }
