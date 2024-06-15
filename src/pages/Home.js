@@ -10,7 +10,7 @@ const Home = () => {
       <main className="footer">
 	<div >
 	<h2 className='title-2'>ABOUT US</h2>
-  <h3 className="title-3">kobernbokernbo[eibneio[rbhner[iobhnerio[bnerio[bneriobnerio</h3>
+  <h3 className="title-3">Сайт для продажи вещей и портал про моду</h3>
 	</div>
 
       </main>

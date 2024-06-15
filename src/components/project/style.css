@@ -2,17 +2,18 @@
 	max-width: 370px;
 	background-color: black;
 	border-radius: 0px;
-	border: 3px solid rgb(255, 255, 255)
+	/* border: 3px solid rgb(255, 255, 255) */
 }
 
 .project__img {
-	border-radius: 0px;
+	width: 100%;
 }
 
 .project__title {
 	padding: 15px 20px 15px;
-	font-size: 27px;
-	color: red;
+	font-size: 15px;
+	color: rgb(255, 255, 255);
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 	display: flex;
 	justify-content: center;
 	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;

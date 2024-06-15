@@ -207,22 +207,13 @@ body {
 }
 
 /* LibraryS */
-
-
 /* НЕ ТРОГАТЬ ЛОМАЕТ ИНАЧЕ СТРАНИЦУ LIBRARY */
 .librarys{
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	grid-gap: 20px;
-
-
-
 }
-
-
 /* Library detals */
-
-
 .zoom {
 	position: fixed; /* Take the image out of the document flow */
 	top: 50%; /* Move the image to the vertical center */
@@ -232,7 +223,6 @@ body {
 	border-radius: 10px; /* Add a border radius to give a nice effect */
 	box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.5); /* Add a box shadow to give a nice effect */
   }
-
 .library-details {
 	margin: 0 auto;
 	max-width: 865px;
@@ -241,32 +231,18 @@ body {
 	align-items: center;
 	text-align: center;
 }
-
-
 .library-grid {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	grid-gap: 10px;
-
-
-
-
-  }
-  
+  }  
   .library-grid__item {
 	width: 100%;
 	height: auto;
 	transition: transform 0.5s ease;
 	cursor: zoom-in;
-
   }
-
-
-
-
-
 /* Project details */
-
 .project-details {
 	margin: 0 auto;
 	max-width: 865px;
@@ -277,23 +253,20 @@ body {
 
 	text-align: center;
 }
-
 .project-details__cover {
 	width: 100%;
 	height: auto;
 	transition: transform 0.5s ease;
 	cursor: zoom-in;
 }
-
 .project-details__desc {
 	margin-bottom: 30px;
-
+	text-align: center;
 	font-size: 24px;
 	line-height: 1.3;
 }
 
 /* Content list */
-
 .content-list {
 	margin: 0 auto;
 	max-width: 570px;

@@ -25,7 +25,7 @@ import project04Big03 from "../img/helmut lang parachute parka jacket/helmutjack
 
 const projects = [
 	{
-		Disigner: 'CAROL CHRISTIAN POELL',
+		Disigner: 'CPP',
 		ItemName: 'SAFE Wrinkle Belt',
 		img: project01,
 		imgsBig: [
@@ -61,6 +61,18 @@ const projects = [
 
 	},
 
+	{
+		Disigner: 'Helmut lang',
+		ItemName: 'Parachute parka jacket',
+		img: project04,
+		imgsBig: [
+			project04Big01,
+			project04Big02,
+			project04Big03
+		],
+		price: '300$',
+
+	},
 	{
 		Disigner: 'Helmut lang',
 		ItemName: 'Parachute parka jacket',

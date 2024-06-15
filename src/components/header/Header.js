@@ -53,7 +53,7 @@ function Header() {
 	return (
             <div>
 				<div className='TitleOfCarousel'>
-				<h2>SHOP THIS ITEM</h2>
+				<h2>SHOP THIS ITEM:</h2>
 				</div>
                 <Slider />
             </div>
