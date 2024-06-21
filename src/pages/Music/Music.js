@@ -1,18 +1,22 @@
+// 
+
+
+
 import ReactPlayer from 'react-player/youtube';
 
 const youtubeLinks = [
-  { url: 'https://www.youtube.com/watch?v=jckDw7_JbfU', description: 'Description 1\nSecond line of description' },
-  { url: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ', description: 'Description 2\nSecond line of description' },
-  { url: 'https://www.youtube.com/watch?v=Zgi9g-oGsSE', description: 'Description 3\nSecond line of description' },
-  { url: 'https://www.youtube.com/watch?v=Zgi9g-oGsSE', description: 'Description 3\nSecond line of description' },
+  { id: 1, url: 'https://www.youtube.com/watch?v=XC68z6vHwpQ&t=1137s', description: 'Brutalismus 3000\n HOR BERLIN LIVE' },
+  { id: 2, url: 'https://www.youtube.com/watch?v=VDgaKWRuhRU', description: 'Sara Landry\nBoiler Room Live' },
+  { id: 3, url: 'https://www.youtube.com/watch?v=ubaVF0pqonE', description: 'D.Dan\nBoiler Room x Instytut Festival' },
+  { id: 4, url: 'https://www.youtube.com/watch?v=mPivA1islyU', description: 'Black Sabbath\nParanoid (Extended Version) HQ' },
 ];
 
 function Contacts() {
   return (
     <main className="section">
       <div className="video-container">
-        {youtubeLinks.map((link, index) => (
-          <div key={index} className="video-wrapper">
+        {youtubeLinks.map((link) => (
+          <div key={link.id} className="video-wrapper">
             <ReactPlayer
               url={link.url}
               width="100%"
@@ -20,8 +24,8 @@ function Contacts() {
               controls={false}
             />
             <p>
-              {link.description.split('\n').map((line, index) => (
-                <span key={index}>
+              {link.description.split('\n').map((line, lineIndex) => (
+                <span key={lineIndex}>
                   {line}
                   <br />
                 </span>
