@@ -32,31 +32,18 @@
 
 // export default Header;
 
-
-
-
-
-
-
-
-
-
-
-
 import React from 'react';
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a loader
 import Slider from './Slider';
 
-
-
 function Header() {
-	return (
-            <div>
-				<div className='TitleOfCarousel'>
-				<h2>SHOP THIS ITEM:</h2>
-				</div>
-                <Slider />
-            </div>
-        );
-    }
-	export default Header;
+  return (
+    <div>
+      <div className="TitleOfCarousel">
+        <h2>SHOP THIS ITEM:</h2>
+      </div>
+      <Slider />
+    </div>
+  );
+}
+export default Header;

@@ -1,12 +1,12 @@
-import { useParams } from "react-router-dom";
-import { projects } from "../../helpers/projectsList";
+import { useParams } from 'react-router-dom';
+import { projects } from '../../helpers/projectsList';
 
-const Project = () => {
+function Project() {
   const { id } = useParams();
   const project = projects[id];
 
   const handleImageClick = (event) => {
-    event.target.classList.toggle("zoom");
+    event.target.classList.toggle('zoom');
   };
   return (
     <main className="section">
@@ -14,7 +14,7 @@ const Project = () => {
         <div className="project-details">
           <h1 className="title-2">{project.Disigner}</h1>
           <h3 className="title-3">{project.ItemName}</h3>
-          <div class="library-grid">
+          <div className="library-grid">
             {project.imgsBig.map((img, index) => (
               <img
                 key={index}
@@ -24,15 +24,18 @@ const Project = () => {
                 onClick={handleImageClick}
               />
             ))}
-			          </div>
-            <div className="project-details__desc">
-              <p>Price: {project.price}</p>
-            </div>
+          </div>
+          <div className="project-details__desc">
+            <p>
+              Price:
+              {project.price}
+            </p>
+          </div>
 
         </div>
       </div>
     </main>
   );
-};
+}
 
 export default Project;

@@ -1,15 +1,15 @@
 import { NavLink } from 'react-router-dom';
-import '../library/style.css';
+import './style.css';
 
-const Library = ({ title, img, index }) => {
-	return (
-		<NavLink to={`/library/${index}`}>
-			<li className="project">
-				<img src={img} alt={title} className="project__img" />
+function Library({ title, img, index }) {
+  return (
+    <NavLink to={`/library/${index}`}>
+      <li className="project">
+        <img src={img} alt={title} className="project__img" />
 
-			</li>
-		</NavLink>
-	);
-};
+      </li>
+    </NavLink>
+  );
+}
 
 export default Library;

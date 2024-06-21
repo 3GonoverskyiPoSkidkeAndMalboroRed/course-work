@@ -1,34 +1,33 @@
-import "./styles/main.css";
-import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
-import Navbar from "./components/navbar/Navbar"
-import Home from "./pages/Home";
-import Projects from "./pages/Design/Projects";
-import Project from "./pages/Design/Project";
-import Music from "./pages/Music/Music";
-import LibraryS from "./pages/Library/Librarys"
-import Library from "./pages/Library/Library";
+import './styles/main.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Navbar from './components/navbar/Navbar';
+import Home from './pages/Home';
+import Projects from './pages/Design/Projects';
+import Project from './pages/Design/Project';
+import Music from './pages/Music/Music';
+import LibraryS from './pages/Library/Librarys';
+import Library from './pages/Library/Library';
 
 function App() {
   return (
-		<div className="App">
-			<Router>
+    <div className="App">
+      <Router>
 
-				<Navbar />
-				<Routes>
-					<Route path="/" element={<Home />} />
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
 
-					<Route path="/projects" element={<Projects />} />
-					<Route path="/project/:id" element={<Project />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/project/:id" element={<Project />} />
 
-					<Route path="/librarys" element={<LibraryS />} />
-					<Route path="/library/:id" element={<Library />} />
+          <Route path="/librarys" element={<LibraryS />} />
+          <Route path="/library/:id" element={<Library />} />
 
-					
-					<Route path="/music" element={<Music />} />
-				</Routes>
-				
-			</Router>
-		</div>
+          <Route path="/music" element={<Music />} />
+        </Routes>
+
+      </Router>
+    </div>
   );
 }
 
